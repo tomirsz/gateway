@@ -1,0 +1,12 @@
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888
+  application:
+    name: gateway
+  profiles:
+    active: production
+
+server:
+  port: 8050
+eureka:
+  client: ${eureka-client}
